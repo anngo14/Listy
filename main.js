@@ -55,7 +55,12 @@ function addCloseFunction() {
     {
         closeButtons[i].onclick = function() {
             var parent = this.parentElement.parentElement;
-            parent.style.display = "none";
+            parent.style.animationName = "slide";
+            parent.style.animationDuration = ".25s";
+            parent.style.animationIterationCount = 1;
+            setTimeout(() => {
+                parent.style.display = "none";
+            }, 250);
         }
     }
 }

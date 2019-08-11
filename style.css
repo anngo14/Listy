@@ -114,7 +114,9 @@
 }
 .container .listObject .listContent{
     height: 600px;
+    width: 100%;
     overflow-y: scroll;
+    overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -157,6 +159,18 @@
   .close:hover {
     background-color: #f44336;
     color: white;
+  }
+  @keyframes slide{
+      10% {transform: translateX(10%);}
+      20% {transform: translateX(20%);}
+      30% {transform: translateX(30%);}
+      40% {transform: translateX(40%);}
+      50% {transform: translateX(50%);}
+      60% {transform: translateX(60%);}
+      70% {transform: translateX(70%);}
+      80% {transform: translateX(80%);}
+      90% {transform: translateX(90%);}
+      100% {transform: translateX(100%);}
   }
 /* End Container */
 /* Footer */
