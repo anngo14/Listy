@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+/* Navigation Bar */
+.navbar{
+    margin: 0;
+    height: 50px;
+    border-bottom: 1px solid black;
+    background-color: #19242F;
+}
+.navbar .logo{
+    margin-left: 15px;
+    height: 50px;
+    float: left;
+}
+.navbar .logo h1{
+    margin: 0;
+    line-height: 50px;
+    font-size: 40px;
+    color: #E5E8E8;
+    cursor: pointer;
+}
+.navbar .sideButton{
+    margin-right: 0px;
+    float: right;
+}
+.navbar .sideButton .trash{
+    float: right;
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+    margin-right: 5px;
+}
+.navbar .sideButton .trash button{
+    height: 100%;
+    width: 100%;
+    background-image: url("https://img.icons8.com/color/48/000000/trash.png");
+    background-size: 100% 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.navbar .sideButton .trash button:hover{
+    animation-name: shake;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+.navbar .sideButton .trash button:focus{
+    outline: 0;
+}
+@keyframes shake{
+    0% {transform: rotate(20deg);}
+    50% {transform: rotate(-20deg);}
+    100% {transform: rotate(20deg);}
+}
+/* End Navigation Bar */
+/* Container */
+.container{
+    height: 52em;
+    position: relative;
+    background-color: #C5C9CD;
+}
+.container .listObject{
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: -50%;
+    transform: translate(-50%, -50%);
+    max-width: 750px;
+    background-color: #E6ECF2;
+    border-radius: 10px;
+}
+.container .listObject .listTitle{
+    border-bottom: 1px solid black;
+    height: 75px;
+    position: relative;
+    background-color: #ABBCCF;
+    border-radius: 10px 10px 0 0;
+}
+.container .listObject .listTitle .date{
+    float: left;
+    height: 35px;
+    margin-left: 5px;
+}
+.container .listObject .listTitle .date h2{
+    line-height: 75px;
+    font-style: italic;
+    cursor: default;
+}
+.container .listObject .listTitle .listButton{
+    position: absolute;
+    float: right;
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+.container .listObject .listTitle .listButton button{
+    background: #F2F3F4;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px black solid;
+    font-size: 32px;
+    color: #82E0AA;
+    cursor: pointer;
+}
+.container .listObject .listTitle .listButton button:focus{
+    outline: 0;
+}
+.container .listObject .listContent{
+    height: 600px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.container .listObject .listContent::-webkit-scrollbar{
+    display: none;
+}
+.container .listObject .listContent .listItem{
+    border-bottom: 1px black solid;
+}
+.container .listObject .listContent .listItemContent{
+    margin: auto;
+    height: 60px;
+}
+.container .listObject .listContent .listItemContent input{
+    width: 92%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 24px;
+    border: none;
+    float: left;
+    box-sizing: border-box;
+}
+.container .listObject .listContent .listItemContent button{
+    width: 5%;
+    height: 100%;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+.close {
+    float: right;
+    width: 8%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 60px;
+    background-color: #fff;
+  }
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
+/* End Container */
+/* Footer */
+footer{
+    min-height: 50px;
+    border-top: 1px solid black;
+    color: #E5E8E8;
+    background-color: #19242F;
+}
+footer .coder{
+    float: right;
+    height: 100%;
+    line-height: 50px;
+    cursor: default;
+}
+footer .credit{
+    float: left;
+    max-width: 250px;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    margin-left: 10px;
+}
+footer .credit h4{
+    display: inline;
+    cursor: default;
+}
+footer .credit a{
+    color: black;
+    word-break: break-all;
+}
+
+/* End Footer */
