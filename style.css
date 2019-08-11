@@ -155,6 +155,7 @@
     text-align: center;
     line-height: 60px;
     background-color: #fff;
+    cursor: pointer;
   }
   .close:hover {
     background-color: #f44336;
