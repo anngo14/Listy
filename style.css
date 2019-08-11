@@ -87,8 +87,8 @@
 }
 .container .listObject .listTitle .date h2{
     line-height: 75px;
-    font-style: italic;
     cursor: default;
+    font-family: 'Montserrat', sans-serif;
 }
 .container .listObject .listTitle .listButton{
     position: absolute;
@@ -137,6 +137,7 @@
     border: none;
     float: left;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 .container .listObject .listContent .listItemContent button{
     width: 5%;
