@@ -23,7 +23,7 @@
     cursor: pointer;
 }
 .navbar .sideButton{
-    margin-right: 0px;
+    margin-right: 5px;
     float: right;
 }
 .navbar .sideButton .trash{
@@ -58,17 +58,17 @@
 /* End Navigation Bar */
 /* Container */
 .container{
-    height: 52em;
+    height: 54em;
     position: relative;
     background-color: #C5C9CD;
 }
 .container .listObject{
     border: 1px solid black;
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     right: -50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -25%);
     max-width: 750px;
     background-color: #E6ECF2;
     border-radius: 10px;
