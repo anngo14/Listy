@@ -37,7 +37,7 @@ trashButton.addEventListener("click", () => {
     var itemsToDelete = document.querySelectorAll(".listItem");
     for(var i = 0; i < itemsToDelete.length; i++)
     {
-        itemsToDelete[i].style.display = "none";
+        itemsToDelete[i].remove();
     }
 });
 //End Clear All Items
@@ -59,7 +59,7 @@ function addCloseFunction() {
             parent.style.animationDuration = ".25s";
             parent.style.animationIterationCount = 1;
             setTimeout(() => {
-                parent.style.display = "none";
+                parent.remove();
             }, 250);
         }
     }

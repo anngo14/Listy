@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Listy - To Do List</title>
+    <title>Login - Listy</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -16,24 +16,20 @@
         </div>
         <div class="sideButton">
             <div class="sideLink">
-                <a href="login.html">Login</a>
-            </div>
-            <div class="trash">
-                <button id="trashButton"></button>
+                <a href="index.html">Continue as Guest</a>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="listObject">
-            <div class="listTitle">
-                <div class="date">
-                    <h2 id="dateChange">Today's Date</h2>
-                </div>
-                <div class="listButton">
-                    <button id="addButton">+</button>
-                </div>
+        <div class="loginBox">
+                <h2 id="loginHeading">Login</h2>
+            <div class="loginContent">
+                <h3>User</h3><input type="text">
+                <h3>Password</h3><input type="text">
             </div>
-            <div class="listContent">
+            <div class="loginFooter">
+                <a href="#">Create a New User</a>
+                <input id="submitButton" type="submit">
             </div>
         </div>
     </div>
@@ -46,6 +42,6 @@
             <a href="https://icons8.com/icon/13086/trash">Trash icon by Icons8</a>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
