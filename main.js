@@ -12,6 +12,8 @@ addButton.addEventListener("click", () => {
     var newListItem = document.createElement("div");
     var newListItemContent = document.createElement("div");
     var newInput = document.createElement("input");
+    var checkButton = document.createElement("span");
+    var text = document.createTextNode("✓")
     var closeButton = document.createElement("span");
     var txt = document.createTextNode("\u00D7");
 
@@ -20,14 +22,18 @@ addButton.addEventListener("click", () => {
     newInput.setAttribute("type", "text");
     newInput.setAttribute("placeholder", "Item");
     closeButton.setAttribute("class", "close");
+    checkButton.setAttribute("class", "complete");
     
+    checkButton.appendChild(text);
     closeButton.appendChild(txt);
     newListItemContent.appendChild(closeButton);
+    newListItemContent.appendChild(checkButton);
     newListItemContent.appendChild(newInput);
     newListItem.appendChild(newListItemContent);
     container.append(newListItem);
 
     addCloseFunction();
+    addCheckFunction();
 })
 //End Add Item
 //Clear All Items
@@ -65,3 +71,25 @@ function addCloseFunction() {
     }
 }
 //End Close Button
+//Check (Complete) Button
+function addCheckFunction() {
+    var checkButtons = document.getElementsByClassName("complete");
+    for(var i = 0; i < checkButtons.length; i++)
+    {
+        checkButtons[i].onclick = function() {
+            var parent = this.parentElement;
+            var textInput = parent.querySelector("input");
+            if(textInput.value.match("^\\s*$"))
+            {
+                return;
+            }
+            if(textInput.style.textDecoration === "line-through")
+            {
+                textInput.style.textDecoration = "none";
+            }
+            else{
+                textInput.style.textDecoration = "line-through";
+            }
+        }
+    }
+}

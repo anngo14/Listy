@@ -37,6 +37,7 @@
 }
 .navbar .sideButton .sideLink a:hover{
     text-decoration: underline;
+    font-weight: bold;
 }
 .navbar .sideButton .trash{
     float: right;
@@ -66,6 +67,10 @@
     0% {transform: rotate(20deg);}
     50% {transform: rotate(-20deg);}
     100% {transform: rotate(20deg);}
+}
+.navbar .sideButton span{
+    color: white;
+    cursor: default;
 }
 /* End Navigation Bar */
 /* Container */
@@ -147,7 +152,7 @@
     height: 60px;
 }
 .container .listObject .listContent .listItemContent input{
-    width: 92%;
+    width: 84%;
     height: 100%;
     box-sizing: border-box;
     padding: 15px;
@@ -175,6 +180,20 @@
   }
   .close:hover {
     background-color: #f44336;
+    color: white;
+  }
+  .complete {
+      float: right;
+      height: 100%;
+      width: 8%;
+      box-sizing: border-box;
+      text-align: center;
+      line-height: 60px;
+      background-color: #fff;
+      cursor: pointer;
+  }
+  .complete:hover {
+    background-color: #87FD64;
     color: white;
   }
   @keyframes slide{
@@ -258,6 +277,9 @@ footer .credit a{
     width: 100%;
     margin: 20px;
 }
+.loginFooter a{
+    
+}
 #submitButton{
     position: absolute;
     right: 0;
@@ -272,4 +294,24 @@ footer .credit a{
     background-color: #333;
     color: white;
 }
+.errorMsg{
+    color: #f44336;
+    font-size: 14px;
+}
 /*End Login Box*/
+/*Register Box*/
+#registerSubmitButton{
+    position: absolute;
+    right: 0;
+    transform: translate(-40px, -40px);
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 5px;
+    border: .5px solid black;
+    background-color: transparent;
+}
+#registerSubmitButton:hover{
+    background-color: #333;
+    color: white;
+}
+/*End Register Box*/

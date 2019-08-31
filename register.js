@@ -6,7 +6,7 @@ homeLink.addEventListener("click", () => {
 })
 //End Home
 //Submit Button Functionality
-var submitButton = document.querySelector("#submitButton");
+var submitButton = document.querySelector("#registerSubmitButton");
 var emailHeading = document.querySelector("#emailHeading");
 var passHeading = document.querySelector("#passwordHeading");
 
