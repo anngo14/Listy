@@ -86,10 +86,13 @@ function addCheckFunction() {
             if(textInput.style.textDecoration === "line-through")
             {
                 textInput.style.textDecoration = "none";
+                textInput.style.color = "black";
             }
             else{
                 textInput.style.textDecoration = "line-through";
+                textInput.style.color = "#f44336";
             }
         }
     }
 }
+//End Complete Button
