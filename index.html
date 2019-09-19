@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Listy - To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h1 id="titleLogo">Listy</h1>
+        </div>
+        <div class="sideButton">
+            <div class="sideLink">
+                <a id="saveButton">Save</a>
+                <div id="separator"><a> | </a></div>
+                <a id="loadButton">Load</a>
+                <div id="separator"><a> | </a></div>
+                <a id="clearButton">Clear</a>
+            </div>
+            <div class="trash">
+                <button id="trashButton"></button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="listObject">
+            <div class="listTitle">
+                <div class="date">
+                    <h2 id="dateChange">Today's Date</h2>
+                </div>
+                <div class="listButton">
+                    <button id="addButton">+</button>
+                </div>
+            </div>
+            <div class="listContent">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="coder">
+            <p>Designed by Andrew Ngo &copy; 2019 &emsp;</p>
+        </div>
+        <div class="credit">
+            <h4>Icon Credit</h4>
+            <a href="https://icons8.com/icon/13086/trash">Trash icon by Icons8</a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
