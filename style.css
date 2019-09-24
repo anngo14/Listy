@@ -91,7 +91,6 @@
     background-color: #C5C9CD;
 }
 .container .listObject{
-    border: 0.4px solid black;
     position: absolute;
     top: 25%;
     left: 50%;
@@ -100,12 +99,11 @@
     max-width: 750px;
     background-color: #E6ECF2;
     border-radius: 10px;
+    border: 1px solid black;
+
 }
 .container .listObject .listTitle{
-    border-bottom: 0.95px solid black;
-    border-left: 0.5px solid black;
-    border-right: 0.3px solid black;
-    border-top: 0.8px solid black;
+    border-bottom: 1px solid black;
     height: 75px;
     position: relative;
     background-color: #ABBCCF;
